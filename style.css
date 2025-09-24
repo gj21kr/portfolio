@@ -51,38 +51,47 @@ body {
 }
 
 .language-toggle {
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .lang-btn {
-    background: var(--primary-color);
-    border: none;
-    border-radius: 20px;
-    padding: 0.5rem;
+    background: var(--bg-primary);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .lang-option {
-    color: white;
+    color: var(--text-primary);
     font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.25rem 0.5rem;
-    border-radius: 15px;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
     transition: all 0.3s ease;
-    opacity: 0.7;
+    cursor: pointer;
+    user-select: none;
 }
 
 .lang-option.active {
-    background: rgba(255, 255, 255, 0.2);
-    opacity: 1;
+    background: var(--primary-color);
+    color: white;
+}
+
+.lang-option:hover {
+    background: var(--primary-color);
+    color: white;
 }
 
 .lang-btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .nav-logo a {

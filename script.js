@@ -89,10 +89,24 @@ document.addEventListener('DOMContentLoaded', () => {
     switchLanguage(savedLanguage);
 
     // Add click event listeners to language options
-    langToggle.addEventListener('click', (e) => {
-        if (e.target.classList.contains('lang-option')) {
-            const selectedLang = e.target.getAttribute('data-lang');
-            switchLanguage(selectedLang);
-        }
-    });
+    if (langToggle) {
+        langToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (e.target.classList.contains('lang-option')) {
+                const selectedLang = e.target.getAttribute('data-lang');
+                switchLanguage(selectedLang);
+            }
+        });
+
+        // Also add individual click listeners to each lang option
+        const langOptions = langToggle.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const selectedLang = option.getAttribute('data-lang');
+                switchLanguage(selectedLang);
+            });
+        });
+    }
 });
