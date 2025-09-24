@@ -15,12 +15,18 @@
                 <a href="#home">Portfolio</a>
             </div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About Me</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experiences</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" data-ko="Home" data-en="Home">Home</a>
+                <a href="#about" class="nav-link" data-ko="About Me" data-en="About Me">About Me</a>
+                <a href="#skills" class="nav-link" data-ko="Skills" data-en="Skills">Skills</a>
+                <a href="#experience" class="nav-link" data-ko="Experiences" data-en="Experience">Experiences</a>
+                <a href="#projects" class="nav-link" data-ko="Projects" data-en="Projects">Projects</a>
+                <a href="#contact" class="nav-link" data-ko="Contact" data-en="Contact">Contact</a>
+            </div>
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-btn">
+                    <span class="lang-option active" data-lang="ko">한</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -32,11 +38,11 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>안녕하세요, <br>의료 AI 전문가 <span class="highlight">박정은</span>입니다</h1>
-            <p class="hero-description">컴퓨터 비전과 딥러닝 기술을 통해<br>복잡한 의료 영상 문제를 해결하고 인류 건강에 기여합니다.</p>
+            <h1 data-ko="안녕하세요, <br>의료 AI 전문가 <span class='highlight'>박정은</span>입니다" data-en="Hello, <br>I'm <span class='highlight'>Jung-Eun Park</span><br>Medical AI Research Engineer">안녕하세요, <br>의료 AI 전문가 <span class="highlight">박정은</span>입니다</h1>
+            <p class="hero-description" data-ko="컴퓨터 비전과 딥러닝 기술을 통해<br>복잡한 의료 영상 문제를 해결하고 인류 건강에 기여합니다." data-en="Solving complex medical imaging problems<br>through computer vision and deep learning technologies<br>to contribute to human health.">컴퓨터 비전과 딥러닝 기술을 통해<br>복잡한 의료 영상 문제를 해결하고 인류 건강에 기여합니다.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">연락하기</a>
-                <a href="#projects" class="btn-secondary">프로젝트 보기</a>
+                <a href="#contact" class="btn-primary" data-ko="연락하기" data-en="Contact Me">연락하기</a>
+                <a href="#projects" class="btn-secondary" data-ko="프로젝트 보기" data-en="View Projects">프로젝트 보기</a>
             </div>
         </div>
         <div class="hero-image">
@@ -48,23 +54,23 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-ko="About Me" data-en="About Me">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>안녕하세요! 저는 의료 영상 AI 분야의 전문가로, 3D Slicer 모듈 개발부터 실시간 영상 처리, 로봇 내비게이션 시뮬레이션까지 다양한 프로젝트를 수행한 AI 연구 개발자 박정은입니다. 특히 혈관 분할, 중심선 추출, 의료 영상 생성 등 복잡한 의료 영상 처리 문제를 해결하는 데 전문성을 가지고 있습니다.</p>
-                    <p>3D 의료 영상 처리부터 실시간 스트리밍, 물리 시뮬레이션까지 포괄하는 기술 스택을 보유하고 있으며, NVIDIA Holoscan, MONAI, VTK 등 의료 AI 전문 프레임워크를 활용한 실용적 솔루션 개발 경험이 풍부합니다. 연구 결과를 오픈소스로 공개하고 기술 문서화를 통해 지식을 공유하는 것을 중요하게 생각합니다.</p>
+                    <p data-ko="안녕하세요! 저는 의료 영상 AI 분야의 전문가로, 3D Slicer 모듈 개발부터 실시간 영상 처리, 로봇 내비게이션 시뮬레이션까지 다양한 프로젝트를 수행한 AI 연구 개발자 박정은입니다. 특히 혈관 분할, 중심선 추출, 의료 영상 생성 등 복잡한 의료 영상 처리 문제를 해결하는 데 전문성을 가지고 있습니다." data-en="Hello! I'm Jung-Eun Park, an AI research engineer specializing in medical imaging AI. I have extensive experience in various projects ranging from 3D Slicer module development to real-time image processing and robotic navigation simulation. I specialize in solving complex medical image processing problems such as vessel segmentation, centerline extraction, and medical image generation.">안녕하세요! 저는 의료 영상 AI 분야의 전문가로, 3D Slicer 모듈 개발부터 실시간 영상 처리, 로봇 내비게이션 시뮬레이션까지 다양한 프로젝트를 수행한 AI 연구 개발자 박정은입니다. 특히 혈관 분할, 중심선 추출, 의료 영상 생성 등 복잡한 의료 영상 처리 문제를 해결하는 데 전문성을 가지고 있습니다.</p>
+                    <p data-ko="3D 의료 영상 처리부터 실시간 스트리밍, 물리 시뮬레이션까지 포괄하는 기술 스택을 보유하고 있으며, NVIDIA Holoscan, MONAI, VTK 등 의료 AI 전문 프레임워크를 활용한 실용적 솔루션 개발 경험이 풍부합니다. 연구 결과를 오픈소스로 공개하고 기술 문서화를 통해 지식을 공유하는 것을 중요하게 생각합니다." data-en="I possess a comprehensive technology stack ranging from 3D medical image processing to real-time streaming and physics simulation, with extensive experience in developing practical solutions using specialized medical AI frameworks including NVIDIA Holoscan, MONAI, and VTK. I value sharing knowledge through open-source publications and technical documentation.">3D 의료 영상 처리부터 실시간 스트리밍, 물리 시뮬레이션까지 포괄하는 기술 스택을 보유하고 있으며, NVIDIA Holoscan, MONAI, VTK 등 의료 AI 전문 프레임워크를 활용한 실용적 솔루션 개발 경험이 풍부합니다. 연구 결과를 오픈소스로 공개하고 기술 문서화를 통해 지식을 공유하는 것을 중요하게 생각합니다.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">12+</span>
-                            <span class="stat-label">주요 프로젝트</span>
+                            <span class="stat-label" data-ko="주요 프로젝트" data-en="Major Projects">주요 프로젝트</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">3+</span>
-                            <span class="stat-label">년의 전문 경험</span>
+                            <span class="stat-label" data-ko="년의 전문 경험" data-en="Years Experience">년의 전문 경험</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">8</span>
-                            <span class="stat-label">기술 도메인</span>
+                            <span class="stat-label" data-ko="기술 도메인" data-en="Tech Domains">기술 도메인</span>
                         </div>
                     </div>
                 </div>
@@ -79,10 +85,10 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-ko="Skills" data-en="Skills">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>AI & Machine Learning</h3>
+                    <h3 data-ko="AI & Machine Learning" data-en="AI & Machine Learning">AI & Machine Learning</h3>
                     <div class="skills-list">
                         <span class="skill-tag">PyTorch</span>
                         <span class="skill-tag">MONAI</span>
@@ -95,7 +101,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Medical Imaging & Simulation</h3>
+                    <h3 data-ko="Medical Imaging & Simulation" data-en="Medical Imaging & Simulation">Medical Imaging & Simulation</h3>
                     <div class="skills-list">
                         <span class="skill-tag">3D Slicer</span>
                         <span class="skill-tag">VTK</span>
@@ -111,7 +117,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Development & Visualization</h3>
+                    <h3 data-ko="Development & Visualization" data-en="Development & Visualization">Development & Visualization</h3>
                     <div class="skills-list">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">C++</span>
@@ -130,24 +136,60 @@
 
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experiences</h2>
+            <h2 class="section-title" data-ko="Experiences" data-en="Experience">Experiences</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2022 - 현재</div>
+                    <div class="timeline-date" data-ko="2022 - 현재" data-en="2022 - Present">2022 - 현재</div>
                     <div class="timeline-content">
-                        <h3>의료 AI 연구 개발자 & 의료 영상 전문가</h3>
-                        <h4>Advanced Medical Imaging & AI Research</h4>
-                        <p>의료 영상 분야에서 3D Slicer 모듈 개발, 실시간 영상 처리, 로봇 시뮬레이션까지 포괄하는 전문 연구를 수행했습니다. 특히 혈관 분할, 중심선 추출, 의료기기 검출 등 임상적으로 중요한 문제들을 해결하는 AI 솔루션을 개발하고, NVIDIA Holoscan, MONAI, VTK 등 의료 전문 프레임워크를 활용한 실용적 시스템을 구축했습니다.</p>
+                        <h3 data-ko="의료 AI 연구 개발자 & 의료 영상 전문가" data-en="Medical AI Research Engineer & Medical Imaging Specialist">의료 AI 연구 개발자 & 의료 영상 전문가</h3>
+                        <h4 data-ko="Advanced Medical Imaging & AI Research" data-en="Advanced Medical Imaging & AI Research">Advanced Medical Imaging & AI Research</h4>
+                        <p data-ko="의료 영상 분야에서 3D Slicer 모듈 개발, 실시간 영상 처리, 로봇 시뮬레이션까지 포괄하는 전문 연구를 수행했습니다. 특히 혈관 분할, 중심선 추출, 의료기기 검출 등 임상적으로 중요한 문제들을 해결하는 AI 솔루션을 개발하고, NVIDIA Holoscan, MONAI, VTK 등 의료 전문 프레임워크를 활용한 실용적 시스템을 구축했습니다." data-en="Conducted comprehensive research in medical imaging from 3D Slicer module development to real-time image processing and robotic simulation. Developed AI solutions for clinically important problems such as vessel segmentation, centerline extraction, and medical device detection using specialized medical frameworks including NVIDIA Holoscan, MONAI, and VTK.">의료 영상 분야에서 3D Slicer 모듈 개발, 실시간 영상 처리, 로봇 시뮬레이션까지 포괄하는 전문 연구를 수행했습니다. 특히 혈관 분할, 중심선 추출, 의료기기 검출 등 임상적으로 중요한 문제들을 해결하는 AI 솔루션을 개발하고, NVIDIA Holoscan, MONAI, VTK 등 의료 전문 프레임워크를 활용한 실용적 시스템을 구축했습니다.</p>
                         <div style="margin-top: 10px;">
-                            <strong>주요 성과:</strong>
+                            <strong data-ko="주요 성과:" data-en="Key Achievements:">주요 성과:</strong>
                             <ul style="margin: 5px 0; padding-left: 20px;">
-                                <li>12개 이상의 의료 AI 프로젝트 완료</li>
-                                <li>3D 의료 영상 처리 전문 모듈 개발</li>
-                                <li>실시간 의료 영상 스트리밍 플랫폼 구축</li>
-                                <li>다중 물리 시뮬레이션 통합 시스템 개발</li>
-                                <li>오픈소스 기술 문서 및 라이브러리 공개</li>
+                                <li data-ko="12개 이상의 의료 AI 프로젝트 완료" data-en="Completed 12+ medical AI projects">12개 이상의 의료 AI 프로젝트 완료</li>
+                                <li data-ko="3D 의료 영상 처리 전문 모듈 개발" data-en="Developed specialized 3D medical image processing modules">3D 의료 영상 처리 전문 모듈 개발</li>
+                                <li data-ko="실시간 의료 영상 스트리밍 플랫폼 구축" data-en="Built real-time medical imaging streaming platform">실시간 의료 영상 스트리밍 플랫폼 구축</li>
+                                <li data-ko="다중 물리 시뮬레이션 통합 시스템 개발" data-en="Developed multi-physics simulation integrated system">다중 물리 시뮬레이션 통합 시스템 개발</li>
+                                <li data-ko="오픈소스 기술 문서 및 라이브러리 공개" data-en="Published open-source technical documentation and libraries">오픈소스 기술 문서 및 라이브러리 공개</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-ko="2018 - 2022" data-en="2018 - 2022">2018 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 data-ko="의료 영상 AI 연구원" data-en="Medical Imaging AI Researcher">의료 영상 AI 연구원</h3>
+                        <h4 data-ko="Computer Vision & AI for Medical Applications" data-en="Computer Vision & AI for Medical Applications">Computer Vision & AI for Medical Applications</h4>
+                        <p data-ko="컴퓨터 비전 알고리즘과 AI 기술을 활용하여 의료 영상 연구에 집중했습니다. 딥러닝 기반 영상 분석, 객체 검출, 이미지 분할 기술을 의료 진단 및 치료 과정에 적용하여 임상 효율성을 향상시키는 연구를 수행했습니다." data-en="Focused on medical imaging research using computer vision algorithms and AI technologies. Applied deep learning-based image analysis, object detection, and image segmentation techniques to medical diagnosis and treatment processes to improve clinical efficiency.">컴퓨터 비전 알고리즘과 AI 기술을 활용하여 의료 영상 연구에 집중했습니다. 딥러닝 기반 영상 분석, 객체 검출, 이미지 분할 기술을 의료 진단 및 치료 과정에 적용하여 임상 효율성을 향상시키는 연구를 수행했습니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-ko="2015 - 2018" data-en="2015 - 2018">2015 - 2018</div>
+                    <div class="timeline-content">
+                        <h3 data-ko="생체의공학 석사" data-en="Master's in Biomedical Engineering">생체의공학 석사</h3>
+                        <h4 data-ko="부경대학교 | Biophotonics 연구" data-en="Pukyong National University | Biophotonics Research">부경대학교 | Biophotonics Research</h4>
+                        <p data-ko="Biophotonics 분야에서 Optical Coherence Tomography (OCT)와 Photoacoustic Tomography 시스템을 개발하여 동물 암 연구에 활용했습니다. 광학 기반 의료 영상 기술의 원리부터 실제 구현까지 포괄적인 연구 경험을 쌓았습니다." data-en="Developed Optical Coherence Tomography (OCT) and Photoacoustic Tomography systems for animal cancer studies in the field of Biophotonics. Gained comprehensive research experience from the principles of optical-based medical imaging technologies to actual implementation.">Biophotonics 분야에서 Optical Coherence Tomography (OCT)와 Photoacoustic Tomography 시스템을 개발하여 동물 암 연구에 활용했습니다. 광학 기반 의료 영상 기술의 원리부터 실제 구현까지 포괄적인 연구 경험을 쌓았습니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-ko="2016" data-en="2016">2016</div>
+                    <div class="timeline-content">
+                        <h3 data-ko="방문 연구학생" data-en="Visiting Research Student">방문 연구학생</h3>
+                        <h4 data-ko="University of British Columbia, Canada" data-en="University of British Columbia, Canada">University of British Columbia, Canada</h4>
+                        <p data-ko="캐나다 브리티시 컬럼비아 대학교에서 1년간 방문 연구학생으로 활동하며 국제적인 연구 환경에서 Biophotonics 및 의료 영상 기술 연구를 수행했습니다." data-en="Conducted research in Biophotonics and medical imaging technologies as a visiting research student at the University of British Columbia, Canada, for one year in an international research environment.">캐나다 브리티시 컬럼비아 대학교에서 1년간 방문 연구학생으로 활동하며 국제적인 연구 환경에서 Biophotonics 및 의료 영상 기술 연구를 수행했습니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-ko="2012 - 2015" data-en="2012 - 2015">2012 - 2015</div>
+                    <div class="timeline-content">
+                        <h3 data-ko="생체의공학 학사" data-en="Bachelor's in Biomedical Engineering">생체의공학 학사</h3>
+                        <h4 data-ko="부경대학교" data-en="Pukyong National University">부경대학교</h4>
+                        <p data-ko="생체의공학의 기초 이론부터 의료 기기 설계, 생체 신호 처리, 의료 영상 시스템까지 포괄적인 교육을 받으며 의료 기술 분야의 탄탄한 기반을 구축했습니다." data-en="Built a solid foundation in medical technology through comprehensive education covering fundamental theories of biomedical engineering, medical device design, biosignal processing, and medical imaging systems.">생체의공학의 기초 이론부터 의료 기기 설계, 생체 신호 처리, 의료 영상 시스템까지 포괄적인 교육을 받으며 의료 기술 분야의 탄탄한 기반을 구축했습니다.</p>
                     </div>
                 </div>
             </div>
@@ -156,15 +198,15 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title" data-ko="Projects" data-en="Projects">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <i class="fas fa-cube"></i>
                     </div>
                     <div class="project-content">
-                        <h3>3D Slicer 혈관 분할 모듈</h3>
-                        <p>3D Slicer 플랫폼용 혈관 분할 및 중심선 추출 모듈을 개발했습니다. UNet 기반 모델로 MRA 뇌혈관과 CTA 복부 동맥을 분할하며, VMTK를 활용한 3D 중심선 추출과 skeletonization 알고리즘을 구현했습니다. COSTA, AVT 데이터셋으로 훈련된 모델 제공.</p>
+                        <h3 data-ko="3D Slicer 혈관 분할 모듈" data-en="3D Slicer Vessel Segmentation Module">3D Slicer 혈관 분할 모듈</h3>
+                        <p data-ko="3D Slicer 플랫폼용 혈관 분할 및 중심선 추출 모듈을 개발했습니다. UNet 기반 모델로 MRA 뇌혈관과 CTA 복부 동맥을 분할하며, VMTK를 활용한 3D 중심선 추출과 skeletonization 알고리즘을 구현했습니다. COSTA, AVT 데이터셋으로 훈련된 모델 제공." data-en="Developed vessel segmentation and centerline extraction module for 3D Slicer platform. Segmented MRA cerebral vessels and CTA abdominal arteries using UNet-based models, and implemented 3D centerline extraction and skeletonization algorithms using VMTK. Provided models trained on COSTA and AVT datasets.">3D Slicer 플랫폼용 혈관 분할 및 중심선 추출 모듈을 개발했습니다. UNet 기반 모델로 MRA 뇌혈관과 CTA 복부 동맥을 분할하며, VMTK를 활용한 3D 중심선 추출과 skeletonization 알고리즘을 구현했습니다. COSTA, AVT 데이터셋으로 훈련된 모델 제공.</p>
                         <div class="project-tech">
                             <span class="tech-tag">3D Slicer</span>
                             <span class="tech-tag">UNet</span>
@@ -180,8 +222,8 @@
                         <i class="fas fa-route"></i>
                     </div>
                     <div class="project-content">
-                        <h3>3D 의료 내비게이션 시뮬레이션</h3>
-                        <p>의료 영상에서 혈관 구조를 기반으로 한 3D 경로 찾기 및 가이드와이어 내비게이션 시뮬레이션을 개발했습니다. A* 알고리즘 기반 경로 계획, VTK 렌더링, 자율주행 및 유체 역학 시뮬레이션을 포함한 통합 플랫폼으로 실제 임상 시술을 모방합니다.</p>
+                        <h3 data-ko="3D 의료 내비게이션 시뮬레이션" data-en="3D Medical Navigation Simulation">3D 의료 내비게이션 시뮬레이션</h3>
+                        <p data-ko="의료 영상에서 혈관 구조를 기반으로 한 3D 경로 찾기 및 가이드와이어 내비게이션 시뮬레이션을 개발했습니다. A* 알고리즘 기반 경로 계획, VTK 렌더링, 자율주행 및 유체 역학 시뮬레이션을 포함한 통합 플랫폼으로 실제 임상 시술을 모방합니다." data-en="Developed 3D path finding and guidewire navigation simulation based on vessel structures from medical images. An integrated platform including A* algorithm-based path planning, VTK rendering, autonomous driving and fluid dynamics simulation that mimics actual clinical procedures.">의료 영상에서 혈관 구조를 기반으로 한 3D 경로 찾기 및 가이드와이어 내비게이션 시뮬레이션을 개발했습니다. A* 알고리즘 기반 경로 계획, VTK 렌더링, 자율주행 및 유체 역학 시뮬레이션을 포함한 통합 플랫폼으로 실제 임상 시술을 모방합니다.</p>
                         <div class="project-tech">
                             <span class="tech-tag">VTK</span>
                             <span class="tech-tag">Path Finding</span>
@@ -197,8 +239,8 @@
                         <i class="fas fa-microscope"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Vision-101: 의료 AI 종합 라이브러리</h3>
-                        <p>의료 이미지 처리를 위한 포괄적인 AI 라이브러리를 개발했습니다. VAE, GAN, NeRF 등 생성 모델부터 세그멘테이션, 검출, 등록, 추적까지 12개 카테고리의 의료 AI 알고리즘을 구현하고 통합 테스트 시스템과 상세한 기술 문서를 제공합니다.</p>
+                        <h3 data-ko="Vision-101: 의료 AI 종합 라이브러리" data-en="Vision-101: Comprehensive Medical AI Library">Vision-101: 의료 AI 종합 라이브러리</h3>
+                        <p data-ko="의료 이미지 처리를 위한 포괄적인 AI 라이브러리를 개발했습니다. VAE, GAN, NeRF 등 생성 모델부터 세그멘테이션, 검출, 등록, 추적까지 12개 카테고리의 의료 AI 알고리즘을 구현하고 통합 테스트 시스템과 상세한 기술 문서를 제공합니다." data-en="Developed a comprehensive AI library for medical image processing. Implemented 12 categories of medical AI algorithms from generative models like VAE, GAN, NeRF to segmentation, detection, registration, and tracking, with integrated testing system and detailed technical documentation.">의료 이미지 처리를 위한 포괄적인 AI 라이브러리를 개발했습니다. VAE, GAN, NeRF 등 생성 모델부터 세그멘테이션, 검출, 등록, 추적까지 12개 카테고리의 의료 AI 알고리즘을 구현하고 통합 테스트 시스템과 상세한 기술 문서를 제공합니다.</p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">Medical AI</span>
@@ -214,8 +256,8 @@
                         <i class="fas fa-video"></i>
                     </div>
                     <div class="project-content">
-                        <h3>실시간 의료 영상 스트리밍 플랫폼</h3>
-                        <p>NVIDIA Holoscan 기반의 실시간 의료 영상 처리 및 스트리밍 플랫폼을 구축했습니다. 듀얼 카메라 캡처, YOLO 객체 검출, WebRTC 스트리밍, SSH 원격 제어를 지원하며 의료 시술 중 실시간 영상 분석과 원격 모니터링을 가능하게 합니다.</p>
+                        <h3 data-ko="실시간 의료 영상 스트리밍 플랫폼" data-en="Real-time Medical Imaging Streaming Platform">실시간 의료 영상 스트리밍 플랫폼</h3>
+                        <p data-ko="NVIDIA Holoscan 기반의 실시간 의료 영상 처리 및 스트리밍 플랫폼을 구축했습니다. 듀얼 카메라 캡처, YOLO 객체 검출, WebRTC 스트리밍, SSH 원격 제어를 지원하며 의료 시술 중 실시간 영상 분석과 원격 모니터링을 가능하게 합니다." data-en="Built a real-time medical image processing and streaming platform based on NVIDIA Holoscan. Supports dual camera capture, YOLO object detection, WebRTC streaming, and SSH remote control, enabling real-time image analysis and remote monitoring during medical procedures.">NVIDIA Holoscan 기반의 실시간 의료 영상 처리 및 스트리밍 플랫폼을 구축했습니다. 듀얼 카메라 캡처, YOLO 객체 검출, WebRTC 스트리밍, SSH 원격 제어를 지원하며 의료 시술 중 실시간 영상 분석과 원격 모니터링을 가능하게 합니다.</p>
                         <div class="project-tech">
                             <span class="tech-tag">NVIDIA Holoscan</span>
                             <span class="tech-tag">WebRTC</span>
@@ -299,10 +341,10 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" data-ko="Contact" data-en="Contact">Contact</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>연락처 정보</h3>
+                    <h3 data-ko="연락처 정보" data-en="Contact Information">연락처 정보</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i> <!-- 아이콘 수정 -->
                         <a href="mailto:your.email@example.com">your.email@example.com</a>
@@ -328,18 +370,18 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>메시지 보내기</h3>
+                    <h3 data-ko="메시지 보내기" data-en="Send Message">메시지 보내기</h3>
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="이름" required>
+                            <input type="text" placeholder="이름" data-ko="이름" data-en="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="이메일" required>
+                            <input type="email" placeholder="이메일" data-ko="이메일" data-en="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="메시지" rows="5" required></textarea>
+                            <textarea placeholder="메시지" data-ko="메시지" data-en="Message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">보내기</button>
+                        <button type="submit" class="btn-primary" data-ko="보내기" data-en="Send">보내기</button>
                     </form>
                 </div>
             </div>

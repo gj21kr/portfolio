@@ -50,6 +50,41 @@ body {
     margin: 0 auto;
 }
 
+.language-toggle {
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.lang-option {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.lang-option.active {
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;

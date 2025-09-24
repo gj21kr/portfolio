@@ -43,3 +43,56 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
+
+// Language switching functionality
+let currentLanguage = 'ko';
+
+function switchLanguage(lang) {
+    currentLanguage = lang;
+
+    // Update all elements with data-ko and data-en attributes
+    const elements = document.querySelectorAll('[data-ko][data-en]');
+    elements.forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = text;
+            } else if (element.innerHTML.includes('<span') || element.innerHTML.includes('<br>')) {
+                element.innerHTML = text;
+            } else {
+                element.textContent = text;
+            }
+        }
+    });
+
+    // Update active language button
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.classList.remove('active');
+        if (option.getAttribute('data-lang') === lang) {
+            option.classList.add('active');
+        }
+    });
+
+    // Store language preference
+    localStorage.setItem('preferredLanguage', lang);
+
+    // Update document language
+    document.documentElement.lang = lang;
+}
+
+// Initialize language switching
+document.addEventListener('DOMContentLoaded', () => {
+    const langToggle = document.getElementById('langToggle');
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'ko';
+
+    // Set initial language
+    switchLanguage(savedLanguage);
+
+    // Add click event listeners to language options
+    langToggle.addEventListener('click', (e) => {
+        if (e.target.classList.contains('lang-option')) {
+            const selectedLang = e.target.getAttribute('data-lang');
+            switchLanguage(selectedLang);
+        }
+    });
+});
