@@ -50,49 +50,6 @@ body {
     margin: 0 auto;
 }
 
-.language-toggle {
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
-.lang-btn {
-    background: var(--bg-primary);
-    border: 2px solid var(--primary-color);
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
-}
-
-.lang-option {
-    color: var(--text-primary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    user-select: none;
-}
-
-.lang-option.active {
-    background: var(--primary-color);
-    color: white;
-}
-
-.lang-option:hover {
-    background: var(--primary-color);
-    color: white;
-}
-
-.lang-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
 
 .nav-logo a {
     font-size: 1.5rem;
